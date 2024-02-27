@@ -1,0 +1,73 @@
+.connectus-add-class {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .connectus-add-class {
+        padding-top: 10rem;
+    }
+} 
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .text-center {
+        font-size: 22px;
+    }
+} 
+
+.add-padding {
+    padding: 0 2rem 3rem;
+    text-align: center;
+}
+
+
+.connect-us-first {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px; 
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .connect-us-first {
+        flex-direction: row;
+        gap: 40px;
+        margin-bottom: 50px; 
+    }  
+}
+
+.connect-us-board {
+    padding: 1rem;
+    background-image: linear-gradient(120deg, rgba(253, 52, 255, 0.25), rgba(65, 209, 255, 0.25));
+    border-radius: 15px;
+    color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+.connectus-svg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connectus-h {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .connectus-h {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }  
+}

@@ -1,0 +1,140 @@
+.header {
+  display: block;
+  padding: 5px 20px;
+  border: 1px solid #d9d9d9;
+  width: 100vw;
+}
+
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 20px 40px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: var(--body-bcg-color);
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: nowrap;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-logo:hover,
+.nav-logo:focus {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
+
+/* BURGER MENU */
+.menu-toggle {
+  width: 45px;
+  background-color: transparent;
+  border: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+      display: none;
+  }
+}
+
+.nav-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+}
+
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--title-text-color);
+  position: relative;
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-link {
+    font-size: 16px;
+  }
+  }
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--site-nav-linkhover);
+}
+
+.nav-link.current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--site-nav-link);
+  border-radius: 2px;
+  transition: display 0.3s ease;
+}
+
+.nav-link.current:not(:hover)::after {
+  display: none;
+}
+
+.header-cont {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-cont {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 12px;
+  }
+}
+
+.link-contacts {
+  color: var(--link-text-cont);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 100ms;
+}
+
+@media screen and (min-width: 1280px) {
+  .link-contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+  color: var(--site-nav-link);
+}
+

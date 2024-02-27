@@ -1,0 +1,30 @@
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 10px;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 20px 40px;
+        font-size: 10px;
+    }
+}
+
+.link-contacts-add {
+    font-size: 10px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .link-contacts-add {
+      font-size: 14px;
+    }
+  }

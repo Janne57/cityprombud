@@ -1,0 +1,105 @@
+.connect-us {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+  .connect-us {
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom: 80px;
+  }
+}
+
+.connect-us-div {
+  position: relative;
+  flex-basis: 100%;
+  padding: 25px 15px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.30;
+  text-align: justify;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .connect-us-div {
+    width: 400px;
+  }
+}
+
+.accent {
+  flex-basis: 120%;
+  opacity: .15;
+  overflow: hidden;
+}
+
+.connect-svg {
+  width: 90%;
+  height: 90%;
+}
+
+.add-title {
+  text-align: left;
+  padding: 10px 0px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.coursive {
+  font-family: Whisper;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 20px;
+
+  position: absolute;
+  top: 240px;
+  left: 10px;
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 768px) {
+  .coursive {
+    font-size: 26px;
+    flex-basis: 80%;
+    top: 330px;
+    left: -300px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .coursive {
+    font-size: 30px;
+    top: 370px;
+    left: -700px;
+  }
+}
+
+.coursive-add {
+  position: absolute;
+  font-size: 14px;
+  flex-basis: 80%;
+  top: 20px;
+  left: 95px;
+}
+
+@media screen and (min-width: 768px) {
+  .coursive-add {
+    font-size: 24px;
+    top: 45px;
+    left: 360px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .coursive-add {
+    font-size: 26px;
+    flex-basis: 80%;
+    top: 55px;
+    left: 430px;
+  }
+}

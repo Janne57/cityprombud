@@ -1,0 +1,39 @@
+body {
+    background-color: var(--primary-white-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -0.02em;
+    color: var(--primary-text-color);
+    width: 100vw; 
+  }
+
+.container {
+    margin: 0 auto;
+    padding: 0 0px;
+  }
+ 
+  @media screen and (max-width: 374.98px) {
+    .container {
+      max-width: 335px;
+    }
+  }
+ 
+  @media screen and (min-width: 375px) {
+    .container {
+      width: 335px;
+    }
+  }
+ 
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 704px;
+    }
+  }
+ 
+  @media screen and (min-width: 1440px) {
+    .container {
+      width: 1376px;
+    }
+  }
+
+  
+ 
