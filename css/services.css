@@ -7,10 +7,10 @@
         margin-top: 10rem;
     }
 }
-
+/* 
 .current {
     color: var(--current-text-color);
-}
+} */
 
 .card-item {
     min-width: 100%;

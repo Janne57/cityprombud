@@ -71,7 +71,8 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 .mobile-menu .link {
@@ -130,8 +131,11 @@
     transition-delay: 100ms;
 }
 
-
 .mobile-menu .mobile-link:hover,
 .mobile-menu .mobile-link:focus {
     color: var(--site-nav-link);
+}
+  
+.ex {
+    margin-top: -18px;
 }

@@ -48,6 +48,21 @@
   }
 }
 
+/* .nav-list-add {
+  display: none;
+}
+
+
+@media screen and (min-width: 768px){
+  .nav-list-add {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    margin-top: -55px;
+  }
+} */
+
 .nav-list {
   display: none;
 }
@@ -82,6 +97,9 @@
   color: var(--site-nav-linkhover);
 }
 
+.nav-link.current.active {
+  color: var(--site-nav-linkhover);
+}
 .nav-link.current::after {
   content: '';
   display: block;
@@ -137,4 +155,5 @@
 .link-contacts:focus {
   color: var(--site-nav-link);
 }
+
 

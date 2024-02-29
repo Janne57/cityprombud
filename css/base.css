@@ -5,6 +5,9 @@ body {
     color: var(--primary-text-color);
     width: 100vw; 
   }
+  body.modal-open {
+    overflow: hidden;
+}
 
 .container {
     margin: 0 auto;
@@ -35,5 +38,4 @@ body {
     }
   }
 
-  
  

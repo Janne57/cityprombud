@@ -13,26 +13,78 @@
   <link rel="stylesheet" href="./css/modern-normalize.min.css"
     integrity="sha512-1bhKtVC+Rwemskiy3JPDT3u1PjW8B8oH7aFL+fS9Ju0DR/oAp3ttKPIlVWRMdEuhwZ6Lz3ds48hAwz7unUQXdA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="./css/styles.css" >
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo"><img src="./img/logocity.png" alt="Logo Of cityprombud" width="90"
+          height="60"></a>
+      <button data-modal-open class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
 
-  <div id="header-container"></div>
+        <svg width="25" height="19" fill="none" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+
+          <g clip-path="url(#a)">
+            <path stroke="#2E2F42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              d="M1.348 20.043h29.538M1.348 10.735h29.538M1.348 1.428h29.538" />
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="none" d="M0 0h32v22H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+
+      <ul class="nav-list">
+        <li><a href="servisec.html" class="nav-link current active">Послуги</a>
+        </li>
+        <li><a href="example.html" class="nav-link current">Наші об'єкти</a>
+        </li>
+        <li><a href="connection.html" class="nav-link current">Зв'язатися з нами</a>
+        </li>
+        <li><a href="aboutus.html" class="nav-link current">Про нас</a>
+        </li>
+      </ul>
+
+      <ul class="header-cont">
+        <li><a href="mailto:sityprombud@gmail.com" class="link-contacts">sityprombud@gmail.com</a></li>
+        <li><a href="tel:+380969745787" class="link-contacts">+38-096-974-57-87</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+
   <div id="services-container"></div>
   <div id="footer-container"></div>
-  <div id="window-container"></div>
 
-  <script src="main.js"></script>
+
+  <!-- Mobile menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu" data-modal>
+    <button data-modal-close class="menu-close-btn js-close-menu">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <div id="window-container"></div>
+  </div>
 
   <script src="./js/utils.js"></script>
   <script>
-    fetchAndInsert('./partials/header.html', 'header-container');
     fetchAndInsert('./partials/services.html/services.html', 'services-container');
     fetchAndInsert('./partials/footer.html', 'footer-container');
     fetchAndInsert('./partials/windows.html/mobile-menu.html', 'window-container');
   </script>
 
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
